@@ -3,31 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="button/button.css" rel="stylesheet">
+    <link href="button/button-icon/button-icon.css" rel="stylesheet">
+    <link href="button/button-text.css" rel="stylesheet">
+    <link href="button/button-icon/--background/button-icon--background.css" rel="stylesheet">
+    <link href="button/button-icon/--display/button-icon--display.css" rel="stylesheet">
+    <link href="header/header.css" rel="stylesheet">
+    <link href="header/__divider/header__divider.css" rel="stylesheet">
+    <link href="header/__divider/--display/header__divider--display.css" rel="stylesheet">
+    <link href="header/__logo/header__logo.css" rel="stylesheet">
+    <link href="main/main.css" rel="stylesheet">
+    <link href="content/content.css" rel="stylesheet">
     <title>Услуги и сервисы</title>
 </head>
 
-<body>
-    <header class="header xs md">
-        <nav class="menu header__menu xs md">
-            <button class="item xs md burger item--size--40" name="burger">
+<body class="page">
+    <header class="header">
+        <nav class="header__menu">
+            <button class="button button-icon header__item button-icon--background--burger" name="burger">
             </button>
-            <span class="item menu__divider md"></span>
-            <span class="item logo xs md logo">
-                <img src="img/logo.svg" alt="logo">
+            <span class="header__item header__divider header__divider--display--md"></span>
+            <span class="header__item header__logo">
             </span>
-            <button class="item md call item--size--40" name="call">
+            <button class="button button-icon header__item button-icon--background--call button-icon--display--md" name="call">
             </button>
-            <button class="item md chat item--size--40" name="chat">
+            <button class="button button-icon header__item button-icon--background--chat button-icon--display--md" name="chat">
             </button>
-            <button class="item md profile item--size--40" name="profile">
+            <button class="button button-icon header__item button-icon--background--profile button-icon--display--md" name="profile">
             </button>
-            <span class="item menu__divider xs md"></span>
-            <button class="item xs md repair item--size--40" name="repair">
+            <span class="header__item header__divider"></span>
+            <button class="button button-icon header__item button-icon--background--repair" name="repair">
             </button>
-            <button class="item xs md check_status item--size--40" name="check_status">
+            <button class="button button-icon header__item button-icon--background--check_status" name="check_status">
             </button>
         </nav>
     </header>
@@ -36,56 +45,53 @@
             <h1 class="main__heading">
                 Услуги и сервисы
             </h1>
-            <div class="item lg">
-                <label class="link">Оставить заявку
-                    <button class="item lg repair item--size--40" name="repair">
+            <div class="main__menu">
+                <a href="#" class="main__link">
+                    Оставить заявку
+                </a>
+                <button class="button button-icon menu__item button-icon--background--repair" name="repair">
                     </button>
-                </label>
-            </div>
-            <div class="item lg">
-                <label class="link">Статус ремонта</a>
-                    <button class="item lg check_status item--size--40" name="check_status">
+                <a href="#" class="main__link">
+                        Статус ремонта
+                    </a>
+                <button class="button button-icon menu__item button-icon--background--check_status" name="check_status">
                     </button>
-                </label>
             </div>
         </div>
-        <nav class="main__menu menu">
-            <button class="main__button lg" name="brends">
+        <nav class="main__navigation-bar">
+            <button class="button button-text main__button" name="brends">
                 Ремонтируемые бренды
             </button>
-            <button class="main__button xs md lg" name="devices">
-                Ремонтируемые устройства
+            <button class="button button-text main__button" name="devices">
+                Ремонтируемые устройства    
             </button>
-            <button class="main__button xs md" name="other services">
+            <button class="button button-text main__button" name="other services">
                 Дополнительные услуги
             </button>
-            <button class="main__button xs md lg" name="price list">
+            <button class="button button-text main__button" name="price list">
                 Цены на услуги
             </button>
-            <button class="main__button lg" name="contacts">
+            <button class="button button-text main__button" name="contacts">
                 Адреса сервисных центров
             </button>
-            <button class="main__button xs md lg" name="specials">
+            <button class="button button-text main__button" name="specials">
                 Специальные цены
             </button>
-            <button class="main__button xs md lg" name="reviews">
+            <button class="button button-text main__button" name="reviews">
                 Отзывы
             </button>
         </nav>
-        <div class="block main__block">
-            <div class="block__content content">
-                <p class="content__text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                    и, в свою очередь, советуют нас родным и близким.
+        <div class="content">
+            <div class="content__text">
+                <p class="content__paragraph">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                    партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </p>
-                <button class="content__more" name="read more">
+                <button class="button content__more" name="read_more">
                     Читать далее
                 </button>
             </div>
-            <div class="block__image">
+            <div class="content__image">
             </div>
         </div>
     </main>
