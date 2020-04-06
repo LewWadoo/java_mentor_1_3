@@ -8,12 +8,18 @@
 
 @media screen and (max-width: 767px) {
     .header__divider--display--xs {
-        display: flex;
+        display: inline;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
     .header__divider--display--md {
-        display: initial;
+        display: inline;
     }
+}
+
+.header__divider {
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
 }
