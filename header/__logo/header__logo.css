@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+    .header__logo {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .header__logo {
+        margin-right: auto;
+    }
+}
+
+.header__logo {
+    width: 98px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("img/logo.svg");
+}
