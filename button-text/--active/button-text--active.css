@@ -1,14 +1,8 @@
-.button {
-    background-color: inherit;
-    border: none;
-    box-sizing: border-box;
-}
-
-.button:focus {
+.button-text--active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     outline: none;
-    /*padding: 0;*/
+    background-color: white;
 }

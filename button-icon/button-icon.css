@@ -1,0 +1,18 @@
+.button-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border: none;
+    box-sizing: border-box;
+}
+
+.button:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    outline: none;
+}
