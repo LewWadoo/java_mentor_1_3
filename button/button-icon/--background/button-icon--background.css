@@ -1,0 +1,23 @@
+.button-icon--background--burger {
+    background-image: url("img/burger.svg");
+}
+
+.button-icon--background--call {
+    background-image: url("img/call.svg");
+}
+
+.button-icon--background--chat {
+    background-image: url("img/chat.svg");
+}
+
+.button-icon--background--check_status {
+    background-image: url("img/check_status.svg");
+}
+
+.button-icon--background--profile {
+    background-image: url("img/profile.svg");
+}
+
+.button-icon--background--repair {
+    background-image: url("img/repair.svg");
+}
