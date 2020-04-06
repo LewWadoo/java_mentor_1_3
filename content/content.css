@@ -57,20 +57,6 @@
     overflow: hidden;
 }
 
-.content__more {
-    background-image: url("img/expand.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    text-align: right;
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    /*letter-spacing: -0.2px;*/
-    font-weight: bold;
-    line-height: 24px;
-    background-size: 24px;
-    width: 132px;
-}
-
 .content__image {
     flex-grow: 1;
     flex-shrink: 1;
@@ -78,5 +64,4 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    /*padding: 30px 0;*/
 }

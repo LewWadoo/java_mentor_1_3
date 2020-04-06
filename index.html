@@ -5,37 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link href="button/button.css" rel="stylesheet">
-    <link href="button/button-icon/button-icon.css" rel="stylesheet">
-    <link href="button/button-text.css" rel="stylesheet">
-    <link href="button/button-icon/--background/button-icon--background.css" rel="stylesheet">
-    <link href="button/button-icon/--display/button-icon--display.css" rel="stylesheet">
+    <link href="button-icon/button-icon.css" rel="stylesheet">
+    <link href="button-text/button-text.css" rel="stylesheet">
+    <link href="button-text/--active/button-text--active.css" rel="stylesheet">
+    <link href="button-icon/--background/button-icon--background.css" rel="stylesheet">
     <link href="header/header.css" rel="stylesheet">
-    <link href="header/header__divider.css" rel="stylesheet">
-    <link href="header/header__logo.css" rel="stylesheet">
     <link href="main/main.css" rel="stylesheet">
     <link href="content/content.css" rel="stylesheet">
+    <link href="read-more/read-more.css" rel="stylesheet">
     <title>Услуги и сервисы</title>
 </head>
 
 <body class="page">
     <header class="header">
         <nav class="header__menu">
-            <button class="button button-icon header__item button-icon--background--burger" name="burger">
+            <button class="button-icon header__button-icon button-icon--background--burger" name="burger">
             </button>
-            <span class="header__item header__divider header__divider--display--md"></span>
-            <span class="header__item header__logo">
+            <span class="header__logo-divider">
             </span>
-            <button class="button button-icon header__item button-icon--background--call button-icon--display--md" name="call">
+            <span class="header__logo">
+            </span>
+            <button class="button-icon header__contacts button-icon--background--call" name="call">
             </button>
-            <button class="button button-icon header__item button-icon--background--chat button-icon--display--md" name="chat">
+            <button class="button-icon header__contacts button-icon--background--chat" name="chat">
             </button>
-            <button class="button button-icon header__item button-icon--background--profile button-icon--display--md" name="profile">
+            <button class="button-icon header__contacts button-icon--background--profile" name="profile">
             </button>
-            <span class="header__item header__divider"></span>
-            <button class="button button-icon header__item button-icon--background--repair" name="repair">
+            <span class="header__settings-divider">
+            </span>
+            <button class="button-icon header__button-icon button-icon--background--repair" name="repair">
             </button>
-            <button class="button button-icon header__item button-icon--background--check_status" name="check_status">
+            <button class="button-icon header__button-icon button-icon--background--check_status" name="check_status">
             </button>
         </nav>
     </header>
@@ -48,35 +48,35 @@
                 <a href="#" class="main__link">
                     Оставить заявку
                 </a>
-                <button class="button button-icon menu__item button-icon--background--repair" name="repair">
+                <button class="button-icon main__button-icon button-icon--background--repair" name="repair">
                     </button>
                 <a href="#" class="main__link">
                         Статус ремонта
                     </a>
-                <button class="button button-icon menu__item button-icon--background--check_status" name="check_status">
+                <button class="button-icon main__button-icon button-icon--background--check_status" name="check_status">
                     </button>
             </div>
         </div>
         <nav class="main__navigation-bar">
-            <button class="button button-text main__button" name="brends">
+            <button class="button-text main__button" name="brends">
                 Ремонтируемые бренды
             </button>
-            <button class="button button-text main__button" name="devices">
+            <button class="button-text main__button" name="devices">
                 Ремонтируемые устройства    
             </button>
-            <button class="button button-text main__button" name="other services">
+            <button class="button-text main__button" name="other services">
                 Дополнительные услуги
             </button>
-            <button class="button button-text main__button" name="price list">
+            <button class="button-text main__button" name="price list">
                 Цены на услуги
             </button>
-            <button class="button button-text main__button" name="contacts">
+            <button class="button-text main__button" name="contacts">
                 Адреса сервисных центров
             </button>
-            <button class="button button-text main__button" name="specials">
+            <button class="button-text main__button" name="specials">
                 Специальные цены
             </button>
-            <button class="button button-text main__button" name="reviews">
+            <button class="button-text main__button" name="reviews">
                 Отзывы
             </button>
         </nav>
@@ -86,7 +86,7 @@
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного
                     партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </p>
-                <button class="button content__more" name="read_more">
+                <button class="read-more" name="read_more">
                     Читать далее
                 </button>
             </div>
