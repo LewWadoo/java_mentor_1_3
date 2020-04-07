@@ -1,4 +1,11 @@
 @media screen and (max-width: 767px) {
+    .main__fade {
+        position: absolute;
+        height: 33px;
+        left: 92.5%;
+        right: 0%;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
     .main__heading {
         margin: 24px 0 24px 0;
         padding-left: 16px;
@@ -15,6 +22,13 @@
 @media screen and (min-width: 768px) and (max-width: 1119px) {
     .main {
         margin-right: 5px;
+    }
+    .main__fade {
+        position: absolute;
+        height: 33px;
+        left: 92.5%;
+        right: 0%;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
     .main__heading {
         padding-left: 24px;
@@ -102,14 +116,15 @@
     -ms-overflow-style: none;
 }
 
-.main__fade {
+
+/*.main__fade {
     position: absolute;
     width: 24px;
     height: 20px;
     left: 900px;
     top: 220px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-}
+}*/
 
 .main__navigation-bar::-webkit-scrollbar {
     display: none;
