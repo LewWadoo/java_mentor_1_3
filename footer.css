@@ -1,0 +1,35 @@
+.footer__button-icon {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.footer__button-icon:first-of-type {
+    margin-left: 0;
+}
+
+.footer__menu {
+    margin-bottom: 0.5em;
+}
+
+.footer__e-mail {
+    margin-top: 1em;
+}
+
+.footer__phone {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.footer__languages {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.footer__language {
+    margin-right: 0.5em;
+}
+
+.footer__language--active {
+    color: #7E7E82;
+}

@@ -60,13 +60,22 @@
 
 .header {
     flex-direction: column;
-    border-bottom: 1px solid #D9FFF5;
 }
 
 .header__menu {
     flex-direction: row;
     align-items: center;
     height: 88px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header__menu--mobile {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 116px;
+    border: none;
 }
 
 .header__button-icon {
@@ -109,4 +118,5 @@
     background-image: url("img/logo.svg");
     flex-shrink: 0;
     flex-grow: 1;
+    /*background-color: tomato;*/
 }

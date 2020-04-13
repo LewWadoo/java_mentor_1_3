@@ -3,98 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link href="button-icon/button-icon.css" rel="stylesheet">
-    <link href="button-text/button-text.css" rel="stylesheet">
-    <link href="button-text/--active/button-text--active.css" rel="stylesheet">
     <link href="button-icon/--background/button-icon--background.css" rel="stylesheet">
+    <link href="button-text/button-text.css" rel="stylesheet">
     <link href="header/header.css" rel="stylesheet">
-    <link href="main/main.css" rel="stylesheet">
-    <link href="content/content.css" rel="stylesheet">
-    <link href="read-more/read-more.css" rel="stylesheet">
-    <title>Услуги и сервисы</title>
+    <link href="footer.css" rel="stylesheet">
+    <link href="main-mobile.css" rel="stylesheet">
+    <title>Блок 1.4: Продвинутая стилизация</title>
 </head>
 
-<body class="page">
-    <header class="header">
-        <nav class="header__menu">
-            <button class="button-icon header__button-icon button-icon--background--burger" name="burger">
-            </button>
-            <span class="header__logo-divider">
-            </span>
+<body class="mobile-page">
+    <header class="header mobile-page__header">
+        <nav class="header__menu--mobile">
+            <button class="button-icon header__button-icon button-icon--background--cross" name="cross">
+			</button>
             <span class="header__logo">
-            </span>
-            <button class="button-icon header__contacts button-icon--background--call" name="call">
-            </button>
-            <button class="button-icon header__contacts button-icon--background--chat" name="chat">
-            </button>
-            <button class="button-icon header__contacts button-icon--background--profile" name="profile">
-            </button>
-            <span class="header__settings-divider">
-            </span>
-            <button class="button-icon header__button-icon button-icon--background--repair" name="repair">
-            </button>
-            <button class="button-icon header__button-icon button-icon--background--check_status" name="check_status">
-            </button>
+			</span>
+            <button class="button-icon header__button-icon button-icon--background--check_status" name="check-status">
+			</button>
         </nav>
     </header>
-    <main class="main">
-        <div class="main__header">
-            <h1 class="main__heading">
+    <main class="main-mobile">
+        <nav class="main-mobile__navigation-bar">
+            <button class="button-text main-mobile__button-text main-mobile__button-text--active" name="repair">
+                Ремонт техники
+            </button>
+            <button class="button-text main-mobile__button-text" name="services">
                 Услуги и сервисы
-            </h1>
-            <div class="main__menu">
-                <a href="#" class="main__link">
-                    Оставить заявку
-                </a>
-                <button class="button-icon main__button-icon button-icon--background--repair" name="repair">
-                    </button>
-                <a href="#" class="main__link">
-                        Статус ремонта
-                    </a>
-                <button class="button-icon main__button-icon button-icon--background--check_status" name="check_status">
-                    </button>
-            </div>
-        </div>
-        <nav class="main__navigation-bar">
-            <div class="main__fade"></div>
-            <button class="button-text main__button" name="brends">
-                Ремонтируемые бренды
             </button>
-            <button class="button-text main__button" name="devices">
-                Ремонтируемые устройства    
+            <button class="button-text main-mobile__button-text" name="corporate">
+                Корпоративным клиентам
             </button>
-            <button class="button-text main__button" name="other services">
-                Дополнительные услуги
+            <button class="button-text main-mobile__button-text" name="providers">
+                Продавцам техники
             </button>
-            <button class="button-text main__button" name="price list">
-                Цены на услуги
+            <button class="button-text main-mobile__button-text" name="partners">
+                Партнерам
             </button>
-            <button class="button-text main__button" name="contacts">
-                Адреса сервисных центров
+            <button class="button-text main-mobile__button-text" name="manufacturers">
+                Производителям
             </button>
-            <button class="button-text main__button" name="specials">
-                Специальные цены
+            <button class="button-text main-mobile__button-text" name="service-centres">
+                Наши сервисные центры
             </button>
-            <button class="button-text main__button" name="reviews">
-                Отзывы
+            <button class="button-text main-mobile__button-text" name="contacts">
+                Контакты
             </button>
         </nav>
-        <div class="content">
-            <div class="content__text">
-                <p class="content__paragraph">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                    партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                </p>
-                <button class="read-more" name="read_more">
-                    Читать далее
-                </button>
-            </div>
-            <div class="content__image">
-            </div>
-        </div>
     </main>
+    <footer class="footer mobile-page__footer">
+        <nav class="footer__menu">
+            <button class="footer__button-icon button-icon button-icon--background--call"></button>
+            <button class="footer__button-icon button-icon button-icon--background--chat"></button>
+            <button class="footer__button-icon button-icon button-icon--background--profile"></button>
+        </nav>
+        <div class="footer__e-mail">
+            mail@cps.com
+        </div>
+        <div class="footer__phone">
+            8 800 890 8900
+        </div>
+        <div class="footer__languages">
+            <button class="button-text footer__language footer__language--active">RU</button>
+            <button class="button-text footer__language">EN</button>
+            <button class="button-text footer__language">CH</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

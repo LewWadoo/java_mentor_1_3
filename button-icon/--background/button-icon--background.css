@@ -21,3 +21,7 @@
 .button-icon--background--repair {
     background-image: url("img/repair.svg");
 }
+
+.button-icon--background--cross {
+    background-image: url("img/cross.svg");
+}
