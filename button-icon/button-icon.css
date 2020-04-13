@@ -7,12 +7,13 @@
     background-color: inherit;
     border: none;
     box-sizing: border-box;
+    transition: filter 0.2s;
 }
 
-.button:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
+.button-icon:hover {
+    filter: drop-shadow(0 0 8px #FF3E79);
+}
+
+.button-icon:focus {
     outline: none;
 }
