@@ -16,20 +16,10 @@
 }
 
 .footer__phone {
-    font-size: 24px;
-    font-weight: bold;
     margin-top: 0.5em;
 }
 
-.footer__languages {
+.footer__language-switcher {
     margin-top: 2em;
     margin-bottom: 2em;
-}
-
-.footer__language {
-    margin-right: 0.5em;
-}
-
-.footer__language--active {
-    color: #7E7E82;
 }

@@ -1,0 +1,7 @@
+.language-switcher__language--active {
+    color: #7E7E82;
+}
+
+.language-switcher__language {
+    margin-right: 0.5em;
+}
