@@ -8,12 +8,9 @@
     border: none;
     box-sizing: border-box;
     transition: filter 0.2s;
+    cursor: pointer;
 }
 
 .button-icon:hover {
     filter: drop-shadow(0 0 8px #FF3E79);
-}
-
-.button-icon:focus {
-    outline: none;
 }

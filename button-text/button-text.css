@@ -10,6 +10,7 @@
     background-color: inherit;
     padding: 2px;
     transition: background-color 1s;
+    cursor: pointer;
 }
 
 .button-text:hover {

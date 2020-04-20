@@ -1,7 +1,4 @@
 @media screen and (max-width: 767px) {
-    .header {
-        display: flex;
-    }
     .header__menu {
         display: flex;
         justify-content: space-evenly;
@@ -18,9 +15,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
-    .header {
-        display: flex;
-    }
     .header__menu {
         display: flex;
         justify-content: space-evenly;
@@ -37,8 +31,11 @@
 }
 
 @media screen and (min-width: 1120px) {
-    .header {
+    .header__menu {
         display: none;
+    }
+    .header__menu--mobile {
+        display: flex;
     }
 }
 
@@ -54,10 +51,6 @@
 }
 
 .header__menu--mobile {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
     height: 116px;
     border: none;
 }
