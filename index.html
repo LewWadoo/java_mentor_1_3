@@ -3,88 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=320, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="button-icon/button-icon.css" rel="stylesheet">
-    <link href="button-icon/--background/button-icon--background.css" rel="stylesheet">
-    <link href="button-text/button-text.css" rel="stylesheet">
-    <link href="header/header.css" rel="stylesheet">
-    <link href="footer.css" rel="stylesheet">
-    <link href="phone.css" rel="stylesheet">
-    <link href="e-mail.css" rel="stylesheet">
-    <link href="language-switcher.css" rel="stylesheet">
-    <link href="main-mobile.css" rel="stylesheet">
-    <title>Блок 1.4: Продвинутая стилизация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper\swiper-5.3.8\swiper-5.3.8\package\css\swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="brend-selector/brend-selector.css">
+    <link rel="stylesheet" href="button-brend/button-brend.css">
+    <link rel="stylesheet" href="button-brend/--background/button-brend--background.css">
+    <link rel="stylesheet" href="read-more/read-more.css">
+    <title>Блок 1.5: JavaScript в браузере</title>
 </head>
 
-<body class="mobile-page">
-    <header class="header mobile-page__header">
-        <nav class="header__menu header__menu--mobile">
-            <button class="button-icon header__button-icon button-icon--background--cross" name="cross">
-			</button>
-            <span class="header__logo">
-			</span>
-            <button class="button-icon header__button-icon button-icon--background--check_status" name="check-status">
-			</button>
-        </nav>
+<body class="brend-selector">
+    <header class="brend-selector__header">
+        <h1 class="brend-selector__heading">
+            Ремонт техники различных брендов
+        </h1>
     </header>
-    <main class="main-mobile">
-        <nav class="main-mobile__navigation-bar">
-            <!--<ul>
-                <li><a href="#" class="button-text main-mobile__button-text">Ремонт техники</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Услуги и сервисы</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Корпоративным клиентам</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Продавцам техники</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Партнерам</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Производителям</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Наши сервисные центры</a></li>
-                <li><a href="#" class="button-text main-mobile__button-text">Контакты</a></li>
-            </ul>-->
-            <button class="button-text main-mobile__button-text main-mobile__button-text--active" name="repair">
-                Ремонт техники
-            </button>
-            <button class="button-text main-mobile__button-text" name="services">
-                Услуги и сервисы
-            </button>
-            <button class="button-text main-mobile__button-text" name="corporate">
-                Корпоративным клиентам
-            </button>
-            <button class="button-text main-mobile__button-text" name="providers">
-                Продавцам техники
-            </button>
-            <button class="button-text main-mobile__button-text" name="partners">
-                Партнерам
-            </button>
-            <button class="button-text main-mobile__button-text" name="manufacturers">
-                Производителям
-            </button>
-            <button class="button-text main-mobile__button-text" name="service-centres">
-                Наши сервисные центры
-            </button>
-            <button class="button-text main-mobile__button-text" name="contacts">
-                Контакты
+    <main>
+        <nav class="swiper">
+            <div class="swiper-container">
+                <div class="swiper__fade"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--lenovo"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--samsung"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--apple"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--viewsonic"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--bosch"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--hp"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--acer"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--sony"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--lenovo"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--samsung"></button></div>
+                    <div class="swiper-slide"><button class="button-brend button-brend--background--apple"></button></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="brend-stack brend-stack--shrinked">
+                <button class="brend-stack__button-brend button-brend button-brend--background--lenovo"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--samsung"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--apple"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--bosch"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--hp"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--acer"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--viewsonic"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--sony"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--lenovo"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--samsung"></button>
+                <button class="brend-stack__button-brend button-brend button-brend--background--apple"></button>
+            </div>
+            <button class="brend-selector__more more" name="more">
+                <img src="read-more/img/expand.svg" alt="expand" class="more__image more__image--expand">
+                <span class="more__text more__text--expand">
+                Показать все
+            </span>
             </button>
         </nav>
     </main>
-    <footer class="footer mobile-page__footer">
-        <nav class="footer__menu">
-            <button class="footer__button-icon button-icon button-icon--background--call"></button>
-            <button class="footer__button-icon button-icon button-icon--background--chat"></button>
-            <button class="footer__button-icon button-icon button-icon--background--profile"></button>
-        </nav>
-        <div class="e-mail footer__e-mail">
-            mail@cps.com
-        </div>
-        <div class="phone footer__phone">
-            8 800 890 8900
-        </div>
-        <div class="language-switcher footer__language-switcher">
-            <button class="button-text language-switcher__language language-switcher__language--active">RU</button>
-            <button class="button-text language-switcher__language">EN</button>
-            <button class="button-text language-switcher__language">CH</button>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //slidesPerView: 'auto',
+            slidesPerView: 1.4,
+            spaceBetween: 1,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="brend-selector/brend-selector.js"></script>
 </body>
 
 </html>

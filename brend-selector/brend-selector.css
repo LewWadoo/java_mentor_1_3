@@ -1,0 +1,139 @@
+html {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: tomato;*/
+}
+
+.swiper__fade {
+    position: absolute;
+    height: 100%;
+    left: 70%;
+    right: 0%;
+    z-index: 2;
+    background-image: linear-gradient(to left, #F8F8F8 20%, rgba(248, 248, 248, 0.0001));
+    /*background-color: tomato;*/
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: ;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+}
+
+.brend-selector {
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    background-color: #F2F2F2;
+}
+
+.brend-selector__header {
+    background-image: linear-gradient(to right, #F8F8F8, white);
+    height: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+.brend-selector__heading {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #7E7E82;
+    font-weight: normal;
+    padding: 16px;
+}
+
+.brend-selector__more {
+    margin-left: 16px;
+}
+
+.brend-stack {
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    padding-top: 16px;
+    overflow: hidden;
+}
+
+.brend-stack--shrinked {
+    height: 176px;
+}
+
+.brend-stack--expanded {
+    height: 100%;
+}
+
+.brend-stack__button-brend {
+    margin: 8px 24px 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        display: block;
+    }
+    .brend-selector__heading {
+        padding-left: 16px;
+    }
+    .brend-stack {
+        display: none;
+    }
+    .more {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .swiper-container {
+        display: none;
+    }
+    .brend-selector__heading {
+        padding-left: 24px;
+    }
+    .brend-stack {
+        display: flex;
+        padding-left: 24px;
+    }
+    .more {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .swiper-container {
+        display: none;
+    }
+    .brend-selector__heading {
+        padding-left: 32px;
+    }
+    .brend-stack {
+        display: flex;
+        padding-left: 32px;
+    }
+    .more {
+        display: flex;
+    }
+}

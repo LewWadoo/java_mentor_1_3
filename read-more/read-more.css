@@ -1,24 +1,32 @@
-.read-more {
-    background-image: url("img/expand.svg");
+.more {
     background-repeat: no-repeat;
     background-position: left center;
-    text-align: right;
+    text-align: left;
+    padding: 6px;
     font-family: 'TT Lakes';
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
     background-size: 24px;
-    width: 132px;
     border: none;
     box-sizing: border-box;
     background-color: inherit;
+    cursor: pointer;
+    align-items: center;
 }
 
+.more__text {
+    vertical-align: middle;
+}
 
-/*.read-more:focus {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    outline: none;
-}*/
+.more__image {
+    transition: 0.5s;
+}
+
+.more__image--expand {
+    transform: rotate(0deg);
+}
+
+.more__image--hide {
+    transform: rotate(180deg);
+}
