@@ -1,0 +1,39 @@
+.button-brend--background--lenovo {
+    background: url("img/Lenovo.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--samsung {
+    background: url("img/Samsung.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--apple {
+    background: url("img/Apple.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--bosch {
+    background: url("img/Bosch.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--hp {
+    background: url("img/HP.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--acer {
+    background: url("img/Acer.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--viewsonic {
+    background: url("img/Viewsonic.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}
+
+.button-brend--background--sony {
+    background: url("img/Sony.svg") 16px center no-repeat, url("img/go.svg") 168px center no-repeat white;
+    ;
+}

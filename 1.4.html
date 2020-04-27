@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="button-icon/button-icon.css" rel="stylesheet">
+    <link href="button-icon/--background/button-icon--background.css" rel="stylesheet">
+    <link href="button-text/button-text.css" rel="stylesheet">
+    <link href="header/header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="phone.css" rel="stylesheet">
+    <link href="e-mail.css" rel="stylesheet">
+    <link href="language-switcher.css" rel="stylesheet">
+    <link href="main-mobile.css" rel="stylesheet">
+    <title>Блок 1.4: Продвинутая стилизация</title>
+</head>
+
+<body class="mobile-page">
+    <header class="header mobile-page__header">
+        <nav class="header__menu header__menu--mobile">
+            <button class="button-icon header__button-icon button-icon--background--cross" name="cross">
+			</button>
+            <span class="header__logo">
+			</span>
+            <button class="button-icon header__button-icon button-icon--background--check_status" name="check-status">
+			</button>
+        </nav>
+    </header>
+    <main class="main-mobile">
+        <nav class="main-mobile__navigation-bar">
+            <!--<ul>
+                <li><a href="#" class="button-text main-mobile__button-text">Ремонт техники</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Услуги и сервисы</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Корпоративным клиентам</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Продавцам техники</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Партнерам</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Производителям</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Наши сервисные центры</a></li>
+                <li><a href="#" class="button-text main-mobile__button-text">Контакты</a></li>
+            </ul>-->
+            <button class="button-text main-mobile__button-text main-mobile__button-text--active" name="repair">
+                Ремонт техники
+            </button>
+            <button class="button-text main-mobile__button-text" name="services">
+                Услуги и сервисы
+            </button>
+            <button class="button-text main-mobile__button-text" name="corporate">
+                Корпоративным клиентам
+            </button>
+            <button class="button-text main-mobile__button-text" name="providers">
+                Продавцам техники
+            </button>
+            <button class="button-text main-mobile__button-text" name="partners">
+                Партнерам
+            </button>
+            <button class="button-text main-mobile__button-text" name="manufacturers">
+                Производителям
+            </button>
+            <button class="button-text main-mobile__button-text" name="service-centres">
+                Наши сервисные центры
+            </button>
+            <button class="button-text main-mobile__button-text" name="contacts">
+                Контакты
+            </button>
+        </nav>
+    </main>
+    <footer class="footer mobile-page__footer">
+        <nav class="footer__menu">
+            <button class="footer__button-icon button-icon button-icon--background--call"></button>
+            <button class="footer__button-icon button-icon button-icon--background--chat"></button>
+            <button class="footer__button-icon button-icon button-icon--background--profile"></button>
+        </nav>
+        <div class="e-mail footer__e-mail">
+            mail@cps.com
+        </div>
+        <div class="phone footer__phone">
+            8 800 890 8900
+        </div>
+        <div class="language-switcher footer__language-switcher">
+            <button class="button-text language-switcher__language language-switcher__language--active">RU</button>
+            <button class="button-text language-switcher__language">EN</button>
+            <button class="button-text language-switcher__language">CH</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
