@@ -11,6 +11,7 @@ let classMoreImageHide = classMoreImage + classModifierHide;
 let classMoreTextHide = classMoreText + classModifierHide;
 let classBrendStackExpanded = classBrendStack + classModifierExpanded;
 let classBrendStackShrinked = classBrendStack + classModifierShrinked;
+let classBrendStackBrend = classBrendStack + '__brend';
 let more = document.querySelector('.more');
 let moreImage = document.querySelector('.' + classMoreImage);
 let moreText = document.querySelector('.' + classMoreText);
@@ -18,18 +19,108 @@ let brendStack = document.querySelector('.' + classBrendStack);
 let textContentExpand = 'Показать все';
 let textContentHide = 'Скрыть';
 
-more.onclick = function() {
+more.onclick = function () {
     if (moreImage.classList.contains(classMoreImageExpand)) {
-        moreImage.classList.remove(classMoreImageExpand);
-        moreImage.classList.add(classMoreImageHide);
+        moreImage.classList.replace(classMoreImageExpand, classMoreImageHide);
         moreText.textContent = textContentHide;
-        brendStack.classList.remove(classBrendStackShrinked);
-        brendStack.classList.add(classBrendStackExpanded);
+        brendStack.classList.replace(classBrendStackShrinked, classBrendStackExpanded);
     } else if (moreImage.classList.contains(classMoreImageHide)) {
-        moreImage.classList.remove(classMoreImageHide);
-        moreImage.classList.add(classMoreImageExpand);
+        moreImage.classList.replace(classMoreImageHide, classMoreImageExpand);
         moreText.textContent = textContentExpand;
-        brendStack.classList.remove(classBrendStackExpanded);
-        brendStack.classList.add(classBrendStackShrinked);
+        brendStack.classList.replace(classBrendStackExpanded, classBrendStackShrinked);
+    }
+}
+
+let swiperOptions = {
+    slidesPerView: 1.4,
+    spaceBetween: 16,
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+}
+let classSwiperPrefix = 'swiper-';
+let classSwiperContainer = classSwiperPrefix + 'container';
+let classSwiperWrapper = classSwiperPrefix + 'wrapper';
+let classSwiperPagination = classSwiperPrefix + 'pagination';
+let classSwiperPaginationBullet = classSwiperPagination + '-bullet';
+let classSwiperSlide = classSwiperPrefix + 'slide';
+let classFade = 'fade';
+
+let swiperContainer = document.querySelector('.' + classSwiperContainer);
+let swiperWrapper = document.querySelector('.' + classSwiperWrapper);
+let swiperPagination = document.querySelector('.' + classSwiperPagination);
+let swiperPaginationBullet = document.querySelector('.' + classSwiperPaginationBullet);
+let swiperSlide = document.querySelector('.' + classSwiperSlide);
+let swiperSlides = document.querySelectorAll('.' + classSwiperSlide);
+let fade = document.querySelector('.' + classFade);
+
+var mySwiper;
+
+var createSwiper = function () {
+    if (!fade.classList.contains(classFade)) {
+        fade.classList.add(classFade);
+    }
+    if (!swiperWrapper.classList.contains(classSwiperWrapper)) {
+        swiperWrapper.classList.add(classSwiperWrapper);
+    }
+    if (swiperWrapper.classList.contains(classBrendStack)) {
+        swiperWrapper.classList.remove(classBrendStack);
+    }
+    swiperSlides.forEach(slide => {
+        if (!slide.classList.contains(classSwiperSlide)) {
+            slide.classList.add(classSwiperSlide);
+        }
+        if (slide.classList.contains(classBrendStackBrend)) {
+            slide.classList.remove(classBrendStackBrend);
+        }
+    });
+    if (typeof (mySwiper) == 'undefined') {
+        mySwiper = new Swiper('.' + classSwiperContainer, swiperOptions);
+        console.log(`initialized + ${mySwiper}`);
+    }
+};
+
+var destroySwiper = function () {
+    if (typeof (mySwiper) != 'undefined') {
+        mySwiper.destroy();
+        mySwiper = undefined;
+    }
+    if (fade.classList.contains(classFade)) {
+        fade.classList.remove(classFade);
+    }
+    if (swiperWrapper.classList.contains(classSwiperWrapper)) {
+        swiperWrapper.classList.remove(classSwiperWrapper);
+    }
+    if (!swiperPagination.classList.contains(classSwiperPagination)) {
+        swiperPagination.classList.remove(classSwiperPagination);
+    }
+    if (!swiperWrapper.classList.contains(classBrendStack)) {
+        swiperWrapper.classList.add(classBrendStack);
+    }
+    swiperSlides.forEach(slide => {
+        if (slide.classList.contains(classSwiperSlide)) {
+            slide.classList.remove(classSwiperSlide);
+        }
+        if (!slide.classList.contains(classBrendStackBrend)) {
+            slide.classList.add(classBrendStackBrend);
+        }
+    });
+};
+
+let maxSwiperResolution = 768;
+
+if (document.body.clientWidth < maxSwiperResolution) {
+    createSwiper();
+} else {
+    destroySwiper();
+}
+
+window.onresize = function (event) {
+    if (document.body.clientWidth < maxSwiperResolution) {
+        createSwiper();
+    } else {
+        destroySwiper();
     }
 }

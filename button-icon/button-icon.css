@@ -4,7 +4,7 @@
     flex-shrink: 0;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: inherit;
+    background-color: transparent;
     border: none;
     box-sizing: border-box;
     transition: filter 0.2s;
