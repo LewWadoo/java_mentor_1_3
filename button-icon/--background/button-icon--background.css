@@ -25,3 +25,8 @@
 .button-icon--background--cross {
     background-image: url("img/cross.svg");
 }
+
+.button-icon--background--go {
+    background-image: url("img/go.svg");
+    background-color: tra;
+}

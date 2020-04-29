@@ -1,0 +1,32 @@
+.brend-selector-header {
+    background-image: linear-gradient(to right, #F8F8F8, white);
+    height: 55px;
+    padding: 0;
+}
+
+.brend-selector-header__heading {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #7E7E82;
+    font-weight: normal;
+    padding: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .brend-selector-header__heading {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .brend-selector-header__heading {
+        padding-left: 24px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .brend-selector-header__heading {
+        padding-left: 32px;
+    }
+}

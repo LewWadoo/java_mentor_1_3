@@ -7,71 +7,117 @@
     <link rel="stylesheet" href="swiper\swiper-5.3.8\swiper-5.3.8\package\css\swiper.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="brend-selector/brend-selector.css">
-    <link rel="stylesheet" href="button-brend/button-brend.css">
-    <link rel="stylesheet" href="button-brend/--background/button-brend--background.css">
+    <link rel="stylesheet" href="brend-selector-header.css">
+    <!--<link rel="stylesheet" href="button-brend/button-brend.css">-->
+    <link rel="stylesheet" href="button-icon/button-icon.css">
+    <link rel="stylesheet" href="button-icon/--background/button-icon--background.css">
+    <!--<link rel="stylesheet" href="button-brend/--background/button-brend--background.css">-->
     <link rel="stylesheet" href="read-more/read-more.css">
+    <link rel="stylesheet" href="fade.css">
     <title>Блок 1.5: JavaScript в браузере</title>
 </head>
 
 <body class="brend-selector">
-    <header class="brend-selector__header">
-        <h1 class="brend-selector__heading">
+    <header class="brend-selector-header">
+        <h1 class="brend-selector-header__heading">
             Ремонт техники различных брендов
         </h1>
     </header>
     <main>
         <nav class="swiper">
             <div class="swiper-container">
-                <div class="swiper__fade"></div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--lenovo"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--samsung"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--apple"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--viewsonic"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--bosch"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--hp"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--acer"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--sony"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--lenovo"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--samsung"></button></div>
-                    <div class="swiper-slide"><button class="button-brend button-brend--background--apple"></button></div>
+                <div class="fade"></div>
+                <div class="brend-stack brend-stack--shrinked swiper-wrapper">
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Lenovo.svg" alt="Lenovo" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Samsung.svg" alt="Samsung" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Apple.svg" alt="Apple" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Viewsonic.svg" alt="Viewsonic" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Bosch.svg" alt="Bosch" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/HP.svg" alt="HP" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Acer.svg" alt="Acer" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Sony.svg" alt="Sony" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Lenovo.svg" alt="Lenovo" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Samsung.svg" alt="Samsung" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="swiper-slide brend-stack__brend">
+                        <label class="brend-stack__label">
+                            <img src="img/Apple.svg" alt="Apple" class="brend-stack__logo">
+                            <button class="brend-stack__button button-icon button-icon--background--go">
+                            </button>
+                        </label>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
-            </div>
-            <div class="brend-stack brend-stack--shrinked">
-                <button class="brend-stack__button-brend button-brend button-brend--background--lenovo"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--samsung"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--apple"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--bosch"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--hp"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--acer"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--viewsonic"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--sony"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--lenovo"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--samsung"></button>
-                <button class="brend-stack__button-brend button-brend button-brend--background--apple"></button>
             </div>
             <button class="brend-selector__more more" name="more">
                 <img src="read-more/img/expand.svg" alt="expand" class="more__image more__image--expand">
                 <span class="more__text more__text--expand">
-                Показать все
-            </span>
+                    Показать все
+                </span>
             </button>
+            </div>
         </nav>
     </main>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            //slidesPerView: 'auto',
-            slidesPerView: 1.4,
-            spaceBetween: 1,
-            grabCursor: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <script src="swiper\swiper-5.3.8\swiper-5.3.8\package\js\swiper.min.js"></script>
     <script src="brend-selector/brend-selector.js"></script>
 </body>
 
